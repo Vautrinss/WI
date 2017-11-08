@@ -1,0 +1,10 @@
+#Intelij
+.idea
+project/target
+
+#compil
+*.class
+
+#Other
+target/
+data-students.json
