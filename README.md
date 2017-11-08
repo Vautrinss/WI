@@ -22,11 +22,11 @@ Team : Leo Pernelle, Jean Brute de Remur, Erick Taru, Jean Miquel, Baptiste Vaut
 
 ## How to run
 
-# clone the project
+### clone the project
 
 `git clone https://github.com/Vautrinss/WI.git`
 
-# open IntelliJ and follow those instructions :
+### open IntelliJ and follow those instructions :
 
 0) If it's the first time running IntelliJ, install Scala plugin when asked
 
