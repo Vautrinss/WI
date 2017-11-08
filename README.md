@@ -10,10 +10,10 @@ Team : Leo Pernelle, Jean Brute de Remur, Erick Taru, Jean Miquel, Baptiste Vaut
 - MLlib
 
 
-## What should you have
+## Prerequirements
 
-- Java 1.8
-- Scala 2.11.8
+- JDK 8
+- Scala 2.11
 - Spark 2.1.0
 - Sbt 1.0.3
 
@@ -22,10 +22,11 @@ Team : Leo Pernelle, Jean Brute de Remur, Erick Taru, Jean Miquel, Baptiste Vaut
 
 ## How to run
 
-clone the project
+# clone the project
+
 `git clone https://github.com/Vautrinss/WI.git`
 
-open IntelliJ and follow those instructions :
+# open IntelliJ and follow those instructions :
 
 0) If it's the first time running IntelliJ, install Scala plugin when asked
 
@@ -53,6 +54,8 @@ open IntelliJ and follow those instructions :
 [![Capture5.png](https://s1.postimg.org/39keemxjkv/Capture5.png)](https://postimg.org/image/1ao7oas197/)
 
 6) Run the MainApp : right click on MainApp --> Run
+
+Wait for the exit code 0
 
 ## Results 
 
