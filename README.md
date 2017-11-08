@@ -47,7 +47,7 @@ Team : Leo Pernelle, Jean Brute de Remur, Erick Taru, Jean Miquel, Baptiste Vaut
 
 [![Capture4.png](https://s1.postimg.org/51en7co8in/Capture4.png)](https://postimg.org/image/96a8jglel7/)
 
-5) Press ALT+SHIFT+F10, then Edit Configuration 
+5) Press ALT+SHIFT+F10 then MainApp --> Edit :
 
 ! make sure your Main Class is MainApp and your data set path is in Program Arguments !
 
