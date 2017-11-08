@@ -47,11 +47,12 @@ open IntelliJ and follow those instructions :
 [![Capture4.png](https://s1.postimg.org/51en7co8in/Capture4.png)](https://postimg.org/image/96a8jglel7/)
 
 5) Press ALT+SHIFT+F10, then Edit Configuration 
-make sure your Main Class is MainApp and your data set path is in Program Arguments
+
+! make sure your Main Class is MainApp and your data set path is in Program Arguments !
 
 [![Capture5.png](https://s1.postimg.org/39keemxjkv/Capture5.png)](https://postimg.org/image/1ao7oas197/)
 
-6) Run the MainApp
+6) Run the MainApp : right click on MainApp --> Run
 
 ## Results 
 
