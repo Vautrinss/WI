@@ -53,7 +53,7 @@ object MainApp {
   /**
     * Index the double values
     * @param dataFrame data container
-    * @param numBuckets the number of wanted decimals for the double
+    * @param numBuckets the number of bins
     * @return the new dataframe with indexed double value
     */
   def indexTypeDouble(dataFrame: DataFrame, numBuckets: Int): DataFrame = {
