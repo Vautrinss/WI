@@ -176,7 +176,6 @@ object MainApp {
 
     /* read the data and create the dataframe */
     var df: DataFrame = spark.read.json(args(0))
-    print(args(0))
 
     /* fill the empty field with "null" value */
     df = df.na.fill("null", Seq("exchange"))
@@ -186,10 +185,10 @@ object MainApp {
     df = df.na.fill("null", Seq("type"))
     df = df.na.fill(0.0, Seq("bidfloor"))
       
-      
-      val ajuster2 = udf((col: String) => {
-      val values = col.split(",")
-      var result = "null"
+    /* split the IAB part of interests to have clean data for the model */
+    val adjustInterests = udf((col: String) => {
+        val values = col.split(",")
+        var result = "null"
        if (values.nonEmpty) {
          var i = 0
          while (i < values.length && result == "null") {
@@ -200,7 +199,7 @@ object MainApp {
        }
        else "null"
       })
-     df = df.withColumn("interests", ajuster2(df("interests")))
+     df = df.withColumn("interests", adjustInterests(df("interests")))
 
 
 
