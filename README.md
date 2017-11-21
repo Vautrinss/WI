@@ -62,3 +62,5 @@ Wait for the exit code 0
 The CSV file is stored in the folder **ouput** at the root of the project
 
 The file is named like part-00000-xxxx.csv
+
+/!\ To re run the algo, YOU HAVE TO DELETE THE "output" FOLDER FIRST /!\
