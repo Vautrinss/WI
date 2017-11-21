@@ -227,6 +227,44 @@ object MainApp {
     df = predict(df)
     df = cleanResult(df)
 
+    //----------METRICS---------------
+    val dfL = df.select("label").collect().map(_(0)).toList
+    val df2L = df2.select("label").collect().map(_(0)).toList
+    var i=0
+    // loop in the real labels and the predicted labels
+    do {
+      println(dfL(i))
+      println(df2L(i))
+      // increment the correct confusion matrix value
+      if (dfL(i).toString == "true" && df2L(i).toString=="true") {
+        println("trueT")
+        trueT = trueT +1
+      }
+      else if (dfL(i).toString == "false" && df2L(i).toString=="false") {
+        println("trueF")
+        trueF = trueF +1
+      }
+      else if (dfL(i).toString=="false" && df2L(i).toString=="true") {
+        println("falseF")
+        falseF = falseF +1
+      }
+      else if (dfL(i).toString=="true" && df2L(i).toString=="false"){
+        println("falseT")
+        falseT = falseT +1
+      }
+      println(trueT)
+      println(trueF)
+      println(falseT)
+      println(falseF)
+
+      i=i+1
+    }
+    while (i!=1000000)
+    // FINAL CONFUSION MATRIX
+    println(trueT)
+    println(trueF)
+    println(falseT)
+    println(falseF)
 
     //----------CSV-------------------
     createCSV(df)
