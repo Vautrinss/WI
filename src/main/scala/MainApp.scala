@@ -177,6 +177,13 @@ object MainApp {
     /* read the data and create the dataframe */
     var df: DataFrame = spark.read.json(args(0))
 
+    /* prepare value for the future metrics and save the initial dataframe */
+    var trueT = 0
+    var trueF = 0
+    var falseT = 0
+    var falseF = 0
+    var df2 = df.drop("size")
+      
     /* fill the empty field with "null" value */
     df = df.na.fill("null", Seq("exchange"))
     df = df.na.fill("null", Seq("interests"))
